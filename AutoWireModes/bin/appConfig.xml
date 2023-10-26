@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="p" class="myPack.Person">
+		<property name="name" value="Onkar"></property>
+		<property name="address" value="Goa"></property>
+		<property name="age" value="23"></property>
+	</bean>
+	<bean id="add" class="myPack.Address">
+		<property name="buildingNo" value="101"></property>
+		<property name="street" value="Film City Road"></property>
+		<property name="dist" value="Panjim"></property>
+		<property name="pin" value="416801"></property>
+	</bean>
+	<bean id="custBean1" class="myPack.Customer">
+		<property name="action" value="Buy"></property>
+	</bean>
+	<bean id="custBean2" class="myPack.Customer" autowire="byName">
+		<property name="type" value="21"></property>
+		<property name="action" value="Buy"></property>
+	</bean>
+	<bean id="custBean3" class="myPack.Customer" autowire="byType">
+		<property name="type" value="21"></property>
+		<property name="action" value="Buy"></property>
+	</bean>
+</beans>

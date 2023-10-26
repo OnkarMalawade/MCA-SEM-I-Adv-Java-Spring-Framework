@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="ans1" class="myPack.Answer">
+		<property name="id" value="101"/>
+		<property name="nm" value="Raju"/>
+		<property name="by" value="Website"/>
+	</bean>
+	<bean id="ans2" class="myPack.Answer">
+		<property name="id" value="101"/>
+		<property name="nm" value="Onkar"/>
+		<property name="by" value="Programming"/>
+	</bean>
+	<bean id="ans3" class="myPack.Answer">
+		<property name="id" value="101"/>
+		<property name="nm" value="Aditya"/>
+		<property name="by" value="Platform"/>
+	</bean>
+	<bean id="que1" class="myPack.Question">
+		<property name="id1" value="1001"/>
+		<property name="nm1" value="What is Java?"/>
+		<property name="ans">
+			<list>
+				<ref bean="ans1"></ref>
+				<ref bean="ans2"></ref>
+				<ref bean="ans3"></ref>
+			</list>
+		</property>
+	</bean>
+</beans>
