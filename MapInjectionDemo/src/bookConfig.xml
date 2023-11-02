@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ 
+    <bean id="bookMap" class="myPack.BookList">
+        <property name="bookMap">
+            <map>
+                <entry key="1" value="Let Us C" />
+                <entry key="2" value="Programming in JAVA" />
+                <entry key="3" value="Introduction to Spring Boot" />
+                <entry key="4" value="Complete Reference C++" />
+            </map>
+      </property>
+    </bean>
+</beans>
