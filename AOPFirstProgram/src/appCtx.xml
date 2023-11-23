@@ -13,4 +13,5 @@
 	 
 	<bean id="aopBean" class="myPack.AOPClass"></bean>	
 	
+	<bean id="tagBean" class="myPack.TestInterface"></bean>
 </beans>

@@ -13,6 +13,8 @@ public class AOPTest {
 		Operation op = (Operation) ctx.getBean("operationBean");
 		System.out.println("Calling Displaying Method of displayMsg()...");
 		op.displayMsg("Hello World.....");
+		TestInterface ti = (TestInterface) ctx.getBean("tagBean");
+		ti.myMsg();
 	}
 
 }
